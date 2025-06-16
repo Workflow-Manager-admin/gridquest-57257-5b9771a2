@@ -449,6 +449,8 @@ function GridQuestMainContainer() {
 
   /**
    * Render Hold Box section for holding/swapping pieces
+   * Visually distinct, clear call to action.
+   * Supports click/drag interaction.
    */
   function renderHoldBox() {
     return (
@@ -514,6 +516,7 @@ function GridQuestMainContainer() {
 
   /**
    * Render draggable pieces below grid with hold button per piece
+   * Each piece shows a small hold/swap button for clear accessibility.
    */
   function renderAvailablePieces() {
     return (
