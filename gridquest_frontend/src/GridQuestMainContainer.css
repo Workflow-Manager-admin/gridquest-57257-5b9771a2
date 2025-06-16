@@ -30,6 +30,137 @@
   margin-bottom: 12px;
 }
 
+/* Hold Box styles for UI and functionality */
+.gq-toprow-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.gq-holdbox-wrapper {
+  min-width: 92px;
+  max-width: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px 0 0 0;
+  margin-left: 9px;
+  margin-top: 2px;
+  background: #eaf6ff99;
+  border-radius: 15px;
+  box-shadow: 0 2px 11px 0 #2196f355;
+  border: 2.2px solid var(--gq-accent, #2196f3);
+  user-select: none;
+}
+
+.gq-holdbox-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--gq-accent);
+  letter-spacing: 1px;
+  margin: 2px 0 4px 0;
+}
+
+.gq-holdbox-btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 68px;
+  height: 68px;
+  transition: box-shadow 0.18s, background 0.16s;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gq-holdbox-btn.disabled {
+  opacity: 0.54;
+  pointer-events: none;
+  box-shadow: none;
+  background: #e0e0e099;
+  cursor: not-allowed;
+}
+
+/* The piece/empty inside hold box */
+.gq-holdbox-piece,
+.gq-holdbox-piece-empty {
+  min-width: 62px;
+  min-height: 62px;
+  background: #f8fbff;
+  border-radius: 9.5px;
+  border: 2px dashed var(--gq-accent, #2196f3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+}
+.gq-holdbox-piece-empty {
+  background: #e3eefe;
+  opacity: 0.33;
+}
+/* Large "+" add in empty Hold Box */
+.gq-holdbox-label {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #2196f3bb;
+  font-family: inherit;
+  letter-spacing: 1px;
+}
+.gq-holdbox-tip {
+  font-size: 0.81rem;
+  color: #377dba;
+  margin: 6px 2px 8px 2px;
+  min-height: 24px;
+  text-align: center;
+  opacity: 0.81;
+  width: 95%;
+}
+
+/* Small hold buttons on pieces area */
+.gq-holdbox-smallbtn {
+  margin-top: 4px;
+  padding: 2px 10px 2px 9px;
+  border-radius: 7px;
+  background: var(--gq-accent, #2196f3);
+  color: white;
+  font-size: 1.07rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.16s, opacity 0.14s;
+  align-self: center;
+  box-shadow: 0px 2px 6px #bcd3fa4d;
+  outline: none;
+  margin-bottom: 2px;
+}
+.gq-holdbox-smallbtn.disabled {
+  pointer-events: none;
+  opacity: 0.48;
+  cursor: not-allowed;
+  background: #bbb;
+}
+
+/* Responsive: move the Hold Box below grid on mobile */
+@media (max-width: 700px) {
+  .gq-toprow-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+  }
+  .gq-holdbox-wrapper {
+    margin-left: 0;
+    max-width: 100vw;
+    padding-top: 4px;
+    margin-bottom: 11px;
+  }
+}
+
 .gq-title {
   font-size: 2.1rem;
   font-weight: 700;
