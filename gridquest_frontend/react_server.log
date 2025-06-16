@@ -11,26 +11,26 @@ asset bundle.js 1.42 MiB [emitted] (name: main)
 asset index.html 1.92 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
 modules by path ./node_modules/ 1.24 MiB 31 modules
-modules by path ./src/ 30.2 KiB
+modules by path ./src/ 30.4 KiB
   modules by path ./src/*.css 15.2 KiB 6 modules
   modules by path ./src/*.js 2.25 KiB
     ./src/index.js 530 bytes [built] [code generated]
     ./src/App.js 1.73 KiB [built] [code generated]
-  ./src/GridQuestMainContainer.jsx 12.8 KiB [built] [code generated]
+  ./src/GridQuestMainContainer.jsx 13 KiB [built] [code generated]
 modules by path ./.ve/ 15.1 KiB
   modules by path ./.ve/*.js 10.6 KiB 2 modules
   modules by path ./.ve/*.css 2.93 KiB
     ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
     ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1264 ms
+webpack 5.99.9 compiled successfully in 1208 ms
 assets by status 1.92 KiB [cached] 1 asset
-assets by path *.js 1.44 MiB
+assets by path *.js 1.42 MiB
   asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.95a7429a431a754dc94f.hot-update.js 17 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.95a7429a431a754dc94f.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.44 MiB = bundle.js 1.42 MiB main.95a7429a431a754dc94f.hot-update.js 17 KiB
+  asset main.bd104c61ea61a4391cc6.hot-update.js 854 bytes [emitted] [immutable] [hmr] (name: main)
+asset main.bd104c61ea61a4391cc6.hot-update.json 28 bytes [emitted] [immutable] [hmr]
+Entrypoint main 1.42 MiB = bundle.js 1.42 MiB main.bd104c61ea61a4391cc6.hot-update.js 854 bytes
 cached modules 1.27 MiB [cached] 44 modules
 runtime modules 27.5 KiB 14 modules
-./src/GridQuestMainContainer.jsx 13 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 171 ms
+./src/GridQuestMainContainer.jsx 13 KiB [built]
+webpack 5.99.9 compiled successfully in 170 ms
