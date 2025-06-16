@@ -406,12 +406,16 @@ function GridQuestMainContainer() {
 
   return (
     <div className="gq-main-container">
+      {/* Audio element with graceful fallback and source validation */}
       <audio
         ref={audioRef}
-        src="https://cdn.pixabay.com/audio/2022/07/26/audio_124b6b2a7c.mp3"
         preload="auto"
         style={{ display: "none" }}
-      />
+      >
+        <source src="https://cdn.pixabay.com/audio/2022/07/26/audio_124b6b2a7c.mp3" type="audio/mpeg" />
+        {/* Fallback text in case audio cannot be played */}
+        Your browser does not support the audio element.
+      </audio>
       <div className="gq-header">
         <h2 className="gq-title">
           <span style={{ color: COLORS.primary }}>Grid</span>
